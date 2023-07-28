@@ -1,0 +1,21 @@
+{% load i18n %}
+
+<ul class="dropdown-menu">
+  <li class="dropdown-header">{% trans "Regions:" %}</li>
+  {% for region in regions %}
+  {# hiddenregion2 region is hidden. #}
+  {% if region != "hiddenregion1" %}
+  {# hiddenregion2 region is hidden. #}
+  {% if region != "hiddenregion2" %}
+  <li>
+    <a href="{% url 'switch_services_region' region %}?next={{ page_url }}" target="_self">
+      <span class="region-name dropdown-title">{{ region }}</span>
+      {% if region == region_name %}
+      <span class="fa fa-check"></span>
+      {% endif %}
+    </a>
+  </li>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+</ul>
