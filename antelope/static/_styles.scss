@@ -1,0 +1,80 @@
+// Used on the login page.
+.login .login-title {
+  display: none;
+}
+
+.login .splash-logo {
+  margin: $padding-large-horizontal $padding-large-vertical;
+  max-width: 35%;
+}
+
+a.login {
+  color: $custom-color-4;
+  text-decoration: underline;
+}
+
+a.login:hover {
+  color: $custom-color-1;
+}
+
+// Used when adding project members to a new project (URL: /identity/).
+.membership {
+  .members, .available_members {
+    ul.btn-group {
+      li.active {
+        a:hover {
+          // Set to $link-hover-color by default,
+          // which means dark blue text on dark blue background...
+          background-color: darken($brand-primary, 10%);
+        }
+      }
+    }
+  }
+}
+
+// Used when filtering metadata, when creating a new image (URL: /project/images/).
+.metadata-tree .panel-heading .has-feedback input[type="text"] {
+  // Color is too dark by default (dark grey on dark blue background).
+  color: $custom-color-2;
+}
+
+// show full size logo
+//.navbar-brand img {
+//  height: unset;
+//}
+
+// resize logo
+.navbar-brand img {
+  display: inline-block;
+  height: $navbar-height - $padding-small-vertical*4;
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  // Override Bootstrap navbar-brand defined in:
+  // https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_navbar.scss
+  @media (min-width: $grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: 0px;
+    }
+  }
+}
+
+#loginfooter {
+  text-align: center;
+  padding: 15px;
+  a {
+    text-decoration: underline;
+    color: $custom-color-5;
+  }
+}
+
+#basefooter {
+  text-align: right;
+  padding: 15px;
+  a {
+    text-decoration: underline;
+    color: $custom-color-5;
+  }
+}

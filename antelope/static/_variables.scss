@@ -1,0 +1,41 @@
+// Most style variables are set in horizon's openstack_dashboard/themes/default/_variables.scss
+// Below are only the variables that we set to other values than the default
+
+$custom-color-1: #6f42c1;
+$custom-color-2: #bbbbbb;
+$custom-color-3: #171920;
+$custom-color-4: #0d668a;
+$custom-color-5: #666666;
+$custom-color-6: #ffffff;
+
+// Colors
+$brand-primary: $custom-color-1 !default;
+$link-color: $custom-color-3 !default;
+
+// Buttons
+$btn-primary-color: $custom-color-6 !default;
+
+// Components
+$component-active-color: $custom-color-2 !default;
+
+// Navbar
+$navbar-height: 64px !default;
+$navbar-default-bg: $custom-color-1 !default;
+$navbar-default-link-color: $custom-color-6 !default;
+$navbar-default-link-active-color: $custom-color-6 !default;
+$navbar-default-link-hover-color: $custom-color-2 !default;
+$navbar-default-link-hover-bg: $custom-color-1 !default;
+
+// Pagination
+$pagination-active-color: $link-color !default;
+
+// Panels
+$panel-default-heading-bg: $custom-color-3 !default;
+$panel-default-text: $custom-color-2 !default;
+$panel-footer-bg: $custom-color-3 !default;
+
+// Progress Bars
+// Progress bar with percentage displayed.
+$progress-bg: $brand-primary !default;
+
+@import "/themes/default/variables";
